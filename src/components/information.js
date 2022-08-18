@@ -1,5 +1,7 @@
 import React, {useState,useEffect} from 'react'
 import "./Information.css"
+import ShowData from './ShowData'
+
 
 const Information = () => {
     const [data, setData]= useState([]);
@@ -27,9 +29,11 @@ useEffect(()=>{
   return (
     <div className='container'>
         <div className='info-design'>
-            <h6>
-                Liste des Information
-            </h6>
+            <h2>
+                Liste des Information  </h2>
+            {data.map((d,index)=>(
+              <ShowData key={d.id} {...d}/>
+            ))}
 
         </div>
     </div>
