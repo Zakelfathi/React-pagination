@@ -1,12 +1,12 @@
 import React from "react";
-import information from "./components/information";
+import Information from "./components/Information";
 
 
 const App =()=>{
   return(
     <React.Fragment> 
-        <information/>
+        <Information />
     </React.Fragment>
   );
-}
+};
 export default App;
