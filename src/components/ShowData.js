@@ -11,7 +11,7 @@ const ShowData = ({title,body}) => {
 
   return (
     <React.Fragment>
-        <div className='card card-design' onClick={showItem}>
+        <div className={show? "card card-design":"card card-design-false" } onClick={showItem}>
             <div className='collapse-icons'>
                 <h6>{title}</h6>
                 <p >

@@ -8,10 +8,29 @@
 .card-design{
     margin: 10px;
     padding: 5px;
+    border-left: 5px solid tomato;
+
 }
+
+.card-design-false{
+    margin: 10px;
+    padding: 5px;
+ 
+}
+.card-design-false:hover{
+    border-left: 5px solid tomato;
+
+}
+
 
 .collapse-icons{
     justify-content:space-between ;
     display: flex;
     cursor: pointer;
+}
+
+.pagination{
+    margin: 10px;
+    padding: 10px;
+    
 }
